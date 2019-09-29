@@ -83,3 +83,28 @@ print newSum
 normfusedBeliefMap = fusedBeliefMap/newSum
 print "Normalized Fused belive map"
 print normfusedBeliefMap
+
+
+
+while(x<(normfusedBeliefMap.shape[0]-1) and y<(normfusedBeliefMap.shape[1]-1)):
+    for x in range(normfusedBeliefMap.shape[0]):
+        for y in range(normfusedBeliefMap.shape[1]):
+            #print x, " ", y
+            if (normfusedBeliefMap[x,y] == 0):
+                normfusedBeliefMap[x,y]=0.4
+            else:
+                normfusedBeliefMap[x,y]=0.6
+#print normfusedBeliefMap
+
+
+ '''
+            print "dist_obst2", distobs2 = calculateDistance(x,wall[1][1],y,walls[1][1])
+            print "dist_obst3", distobs3 = calculateDistance(x,wall[2][2],y,walls[2][2])
+            print "dist_obst4", distobs4 = calculateDistance(x,wall[3][3],y,walls[3][3])
+            print "dist_obst5", distobs5 = calculateDistance(x,wall[4][4],y,walls[4][4])
+            print "dist_obst6", distobs6 = calculateDistance(x,wall[5][5],y,walls[5][5])
+            print "dist_obst7", distobs7 = calculateDistance(x,wall[6][6],y,walls[6][6])
+            print "dist_obst8", distobs8 = calculateDistance(x,wall[7][7],y,walls[7][7])
+            print "dist_obst9", distobs9 = calculateDistance(x,wall[8][8],y,walls[8][8])
+            print "dist_obst10", distobs10 = calculateDistance(x,wall[9][9],y,walls[9][9])
+            '''
